@@ -1,163 +1,27 @@
 <!doctype html>
 <html lang="ru">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#05070b">
-<title>FIT ONLINE</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#07090d">
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <title>TomMartFM</title>
+  <style>
+    html,body{margin:0;min-height:100%;background:#07090d;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}body{min-height:100dvh;display:grid;place-items:center;text-align:center;padding:24px}.box{max-width:420px}.logo{font-size:42px;font-weight:950;letter-spacing:-.06em}.logo span{color:#ff2d55}p{color:#8b93a3}.btn{display:inline-block;margin-top:14px;padding:14px 18px;border-radius:14px;background:#ff2d55;color:#fff;text-decoration:none;font-weight:900}
+  </style>
+  <script>
+    (function(){
+      var target='https://yalacom.github.io/fit-rabota/?from=telegram&v=20260821-1636';
+      location.replace(target);
+    })();
+  </script>
 </head>
 <body>
-<div class="app">
-<header class="topbar">
-  <div class="topbar-inner">
-    <div class="brand"><b>FIT</b> ONLINE</div>
-    <nav class="topnav">
-      <button data-route="home" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 11.5 12 4l9 7.5M5.5 10v10h13V10"/></svg><span>ГЛАВНАЯ</span></button>
-      <button data-route="news"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span>НОВОСТИ</span></button>
-      <button data-route="games"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M8 8h8c3 0 5 2.5 5 5.5S19 19 16.5 19c-2 0-2.5-2-4.5-2s-2.5 2-4.5 2C5 19 3 16.5 3 13.5S5 8 8 8Z"/><path d="M8 11v5M5.5 13.5h5M16.5 12h.01M18.5 15h.01"/></svg><span>МИНИ-ИГРЫ</span></button>
-      <button data-route="rating"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 20V10h3v10M10.5 20V4h3v16M16 20v-7h3v7"/></svg><span>РЕЙТИНГ</span></button>
-      <button data-route="shop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span>МАГАЗИН</span></button>
-      <button data-route="achievements"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="8" r="5"/><path d="m9 13-1 8 4-2 4 2-1-8"/></svg><span>ДОСТИЖЕНИЯ</span></button>
-    </nav>
-    <div class="user-chip"><div class="avatar">A</div><div><b>Алексей</b><small><span data-level>23</span> уровень · <span data-points>1250</span> P</small></div></div>
+  <div class="box">
+    <div class="logo">TomMart<span>FM</span></div>
+    <p>Открываю радио…</p>
+    <a class="btn" href="https://yalacom.github.io/fit-rabota/?from=telegram&v=20260821-1636">ОТКРЫТЬ TOMMARTFM</a>
   </div>
-</header>
-
-<main class="layout">
-<section class="screen active" data-screen="home">
-  <div class="hero-grid">
-    <section class="hero">
-      <div class="warehouse"><div class="rack r1"></div><div class="rack r2"></div><div class="rack r3"></div><div class="forklift"></div></div>
-      <div class="hero-copy">
-        <div class="eyebrow">ВНУТРЕННИЙ РАЗВЛЕКАТЕЛЬНЫЙ ПОРТАЛ</div>
-        <h1><b>FIT</b> ONLINE</h1>
-        <div class="tagline">РАБОТАЕМ СЛАЖЕННО — ОТДЫХАЕМ <b>ЯРКО</b></div>
-        <div class="hero-stats">
-          <div class="mini-stat"><b data-points>1250</b><span>поинтов</span></div>
-          <div class="mini-stat"><b data-level>23</b><span>уровень</span></div>
-          <div class="mini-stat"><b data-streak>12</b><span>дней подряд</span></div>
-        </div>
-      </div>
-    </section>
-    <aside class="radio-card">
-      <h2><b>TOMMART</b><br>RADIO</h2>
-      <div class="wave"><i style="height:22px"></i><i style="height:36px"></i><i style="height:54px"></i><i style="height:28px"></i><i style="height:65px"></i><i style="height:44px"></i><i style="height:30px"></i><i style="height:58px"></i><i style="height:38px"></i><i style="height:68px"></i><i style="height:42px"></i><i style="height:26px"></i><i style="height:53px"></i><i style="height:34px"></i><i style="height:60px"></i></div>
-      <p>Лучшая музыка на складе</p>
-      <button class="btn btn-pink" onclick="openRadio()">ПЕРЕЙТИ К ЭФИРУ</button>
-    </aside>
-  </div>
-
-  <div class="quick-grid">
-    <div class="quick-card" onclick="route('news')"><div class="quick-icon"><svg width="21" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div><div><b>Новости</b><small>Что происходит</small></div></div>
-    <div class="quick-card" onclick="route('profiles')"><div class="quick-icon"><svg width="21" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="8" r="4"/><path d="M4 21c.5-5 3-7 8-7s7.5 2 8 7"/></svg></div><div><b>Профили</b><small>Команда</small></div></div>
-    <div class="quick-card" onclick="route('games')"><div class="quick-icon pink"><svg width="21" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M8 8h8c3 0 5 2.5 5 5.5S19 19 16.5 19c-2 0-2.5-2-4.5-2s-2.5 2-4.5 2C5 19 3 16.5 3 13.5S5 8 8 8Z"/></svg></div><div><b>Мини-игры</b><small>Играй и набирай P</small></div></div>
-    <div class="quick-card" onclick="route('rating')"><div class="quick-icon"><svg width="21" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 20V10h3v10M10.5 20V4h3v16M16 20v-7h3v7"/></svg></div><div><b>Рейтинг</b><small>Лучшие из лучших</small></div></div>
-    <div class="quick-card" onclick="route('achievements')"><div class="quick-icon pink"><svg width="21" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="8" r="5"/><path d="m9 13-1 8 4-2 4 2-1-8"/></svg></div><div><b>Достижения</b><small>Твои награды</small></div></div>
-    <div class="quick-card" onclick="route('shop')"><div class="quick-icon"><svg width="21" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 8h14l-1 12H6L5 8Z"/></svg></div><div><b>Магазин</b><small>Трать поинты</small></div></div>
-  </div>
-
-  <div class="dashboard-grid">
-    <article class="panel">
-      <div class="panel-title"><h3>НОВОСТИ</h3><button class="btn" onclick="route('news')">ВСЕ НОВОСТИ</button></div>
-      <div class="news-row" onclick="showNews(0)"><div class="news-thumb">FIT</div><div><b>FIT ONLINE запущен</b><p>Первый полноценный интерактивный билд уже работает.</p></div></div>
-      <div class="news-row" onclick="showNews(1)"><div class="news-thumb">VS</div><div><b>Битва смен началась</b><p>Сыграй против случайной смены и забери поинты.</p></div></div>
-      <div class="news-row" onclick="showNews(2)"><div class="news-thumb">FM</div><div><b>TOMMART RADIO рядом</b><p>Эфир открывается одной кнопкой.</p></div></div>
-    </article>
-    <article class="panel">
-      <div class="panel-title"><h3>ПРОФИЛИ</h3><button class="btn" onclick="route('profiles')">КОМАНДА</button></div>
-      <div class="people"><div class="person" onclick="showProfile('Алексей')"><div class="avatar">A</div><b>Алексей</b><small>Склад №7</small></div><div class="person" onclick="showProfile('Марина')"><div class="avatar">М</div><b>Марина</b><small>Склад №2</small></div><div class="person" onclick="showProfile('Игорь')"><div class="avatar">И</div><b>Игорь</b><small>Логистика</small></div><div class="person" onclick="showProfile('Светлана')"><div class="avatar">С</div><b>Светлана</b><small>Офис</small></div></div>
-      <div class="level-card"><div class="level-row"><div><small>ТВОЙ УРОВЕНЬ</small><br><strong data-level>23</strong></div><small data-xp>7 540 / 10 000 XP</small></div><div class="progress"><span data-xpbar style="width:75%"></span></div></div>
-    </article>
-    <article class="panel">
-      <div class="panel-title"><h3>СОБЫТИЕ ДНЯ</h3><span class="timer" id="eventTimer">--:--:--</span></div>
-      <div class="event-mini"><div><h4>УГАДАЙ КОД</h4><p>Разгадай трёхзначный код и забери награду.</p><button class="btn btn-pink" onclick="codeGame()">УЧАСТВОВАТЬ</button></div><div class="safe">453</div></div>
-      <div class="reward-line"><span>НАГРАДА</span><span><b>+100</b> P</span><span><b>+250</b> XP</span></div>
-    </article>
-  </div>
-  <div class="footer"><div><b>РАБОТАЕМ ВМЕСТЕ — ПОБЕЖДАЕМ ВМЕСТЕ</b><small>Теперь это уже не макет: вкладки, игры, очки и магазин работают.</small></div><button class="btn btn-blue" onclick="dailyBonus()">ЗАБРАТЬ БОНУС ДНЯ</button></div>
-</section>
-
-<section class="screen" data-screen="news">
-  <div class="section-head"><div><h2>Новости</h2><p>Не просто лента — карточки открываются и показывают детали.</p></div><button class="btn" data-route="home">НА ГЛАВНУЮ</button></div>
-  <div class="cards-3">
-    <article class="news-card" onclick="showNews(0)"><div class="cover">FIT</div><span class="meta">СЕГОДНЯ · 09:30</span><h3>FIT ONLINE запущен</h3><p>Новый портал получил отдельные экраны, рабочие мини-игры, рейтинг и магазин.</p></article>
-    <article class="news-card" onclick="showNews(1)"><div class="cover">VS</div><span class="meta">СЕГОДНЯ · 10:10</span><h3>Битва смен началась</h3><p>Сыграй против случайного соперника. Победа сразу начисляет поинты и XP.</p></article>
-    <article class="news-card" onclick="showNews(2)"><div class="cover">FM</div><span class="meta">СЕГОДНЯ · 11:45</span><h3>TOMMART RADIO</h3><p>Кнопка эфира теперь есть на главной и всегда ведёт на готовое радио.</p></article>
-  </div>
-</section>
-
-<section class="screen" data-screen="profiles">
-  <div class="section-head"><div><h2>Профили</h2><p>Выбери человека и открой его карточку.</p></div><button class="btn" data-route="home">НА ГЛАВНУЮ</button></div>
-  <div class="cards-3">
-    <article class="profile-card" onclick="showProfile('Алексей')"><div class="avatar">A</div><h3>Алексей</h3><p>Склад №7</p><div class="profile-stats"><div class="profile-stat"><b>12 560</b><small>ПОИНТОВ</small></div><div class="profile-stat"><b>23</b><small>УРОВЕНЬ</small></div></div></article>
-    <article class="profile-card" onclick="showProfile('Марина')"><div class="avatar">М</div><h3>Марина</h3><p>Склад №2</p><div class="profile-stats"><div class="profile-stat"><b>9 870</b><small>ПОИНТОВ</small></div><div class="profile-stat"><b>21</b><small>УРОВЕНЬ</small></div></div></article>
-    <article class="profile-card" onclick="showProfile('Игорь')"><div class="avatar">И</div><h3>Игорь</h3><p>Логистика</p><div class="profile-stats"><div class="profile-stat"><b>8 430</b><small>ПОИНТОВ</small></div><div class="profile-stat"><b>19</b><small>УРОВЕНЬ</small></div></div></article>
-    <article class="profile-card" onclick="showProfile('Светлана')"><div class="avatar">С</div><h3>Светлана</h3><p>Офис</p><div class="profile-stats"><div class="profile-stat"><b>6 210</b><small>ПОИНТОВ</small></div><div class="profile-stat"><b>18</b><small>УРОВЕНЬ</small></div></div></article>
-    <article class="profile-card" onclick="showProfile('Дмитрий')"><div class="avatar">Д</div><h3>Дмитрий</h3><p>Приёмка</p><div class="profile-stats"><div class="profile-stat"><b>5 740</b><small>ПОИНТОВ</small></div><div class="profile-stat"><b>17</b><small>УРОВЕНЬ</small></div></div></article>
-    <article class="profile-card" onclick="showProfile('Анна')"><div class="avatar">А</div><h3>Анна</h3><p>Комплектовка</p><div class="profile-stats"><div class="profile-stat"><b>4 980</b><small>ПОИНТОВ</small></div><div class="profile-stat"><b>16</b><small>УРОВЕНЬ</small></div></div></article>
-  </div>
-</section>
-
-<section class="screen" data-screen="games">
-  <div class="section-head"><div><h2>Мини-игры</h2><p>Здесь уже можно реально нажимать, играть и получать поинты.</p></div><div class="section-actions"><span class="pill">Баланс: <b data-points>1250</b> P</span><button class="btn" data-route="home">НА ГЛАВНУЮ</button></div></div>
-  <div class="cards-3">
-    <article class="game-card" onclick="battleGame()"><div class="game-cover">VS</div><h3>Битва смен</h3><p>Случайный соперник, победа или поражение. За победу начисляется награда.</p><div class="game-reward"><span class="pill">до +80 P</span><span class="pill">+130 XP</span></div><button class="btn btn-pink">ИГРАТЬ</button></article>
-    <article class="game-card" onclick="wheelGame()"><div class="game-cover">360°</div><h3>Колесо судьбы</h3><p>Случайный приз: поинты, опыт, джекпот или пустой сектор.</p><div class="game-reward"><span class="pill">до +300 P</span><span class="pill">до +250 XP</span></div><button class="btn btn-blue">КРУТИТЬ</button></article>
-    <article class="game-card" onclick="reactionGame()"><div class="game-cover">0.2</div><h3>Реакция</h3><p>Жди сигнал и нажми максимально быстро. Награда зависит от времени реакции.</p><div class="game-reward"><span class="pill">до +120 P</span><span class="pill">тест скорости</span></div><button class="btn btn-green">СТАРТ</button></article>
-  </div>
-</section>
-
-<section class="screen" data-screen="rating">
-  <div class="section-head"><div><h2>Рейтинг</h2><p>Таблица лидеров и твой текущий результат.</p></div><button class="btn" data-route="home">НА ГЛАВНУЮ</button></div>
-  <article class="rank-card"><div class="rank-list">
-    <div class="rank-row"><div class="place">1</div><div class="rank-person"><div class="avatar">A</div><div><b>Алексей</b><small>Склад №7</small></div></div><div class="rank-points">12 560 P</div></div>
-    <div class="rank-row"><div class="place">2</div><div class="rank-person"><div class="avatar">М</div><div><b>Марина</b><small>Склад №2</small></div></div><div class="rank-points">9 870 P</div></div>
-    <div class="rank-row"><div class="place">3</div><div class="rank-person"><div class="avatar">И</div><div><b>Игорь</b><small>Логистика</small></div></div><div class="rank-points">8 430 P</div></div>
-    <div class="rank-row"><div class="place">4</div><div class="rank-person"><div class="avatar">С</div><div><b>Светлана</b><small>Офис</small></div></div><div class="rank-points">6 210 P</div></div>
-    <div class="rank-row"><div class="place">24</div><div class="rank-person"><div class="avatar">Т</div><div><b>Твой результат</b><small>Этот браузер</small></div></div><div class="rank-points" id="yourRankScore">1 250 P</div></div>
-  </div></article>
-</section>
-
-<section class="screen" data-screen="achievements">
-  <div class="section-head"><div><h2>Достижения</h2><p>Прогресс меняется, когда играешь и покупаешь предметы.</p></div><button class="btn" data-route="home">НА ГЛАВНУЮ</button></div>
-  <div class="cards-3">
-    <article class="achievement"><div class="badge">30</div><div><h3>Легенда смены</h3><p>Отработай 30 смен без опозданий.</p><div class="progress"><span style="width:83%"></span></div></div></article>
-    <article class="achievement"><div class="badge">10</div><div><h3>Мастер игр</h3><p>Сыграй 10 мини-игр.</p><div class="progress"><span data-gamesbar style="width:10%"></span></div></div></article>
-    <article class="achievement"><div class="badge">5</div><div><h3>Коллекционер</h3><p>Купи 5 предметов в магазине.</p><div class="progress"><span data-shopbar style="width:0%"></span></div></div></article>
-  </div>
-</section>
-
-<section class="screen" data-screen="shop">
-  <div class="section-head"><div><h2>Магазин</h2><p>Покупки реально списывают локальные поинты.</p></div><div class="section-actions"><span class="pill">Баланс: <b data-points>1250</b> P</span><button class="btn" data-route="home">НА ГЛАВНУЮ</button></div></div>
-  <div class="cards-3">
-    <article class="shop-item"><div class="product-art"><div class="hoodie"></div></div><h3>Худи FIT ONLINE</h3><p>Чёрное худи с фирменным знаком.</p><div class="price">2 500 P</div><button class="btn btn-pink" onclick="buy('Худи FIT ONLINE',2500)">КУПИТЬ</button></article>
-    <article class="shop-item"><div class="product-art"><div class="mug"></div></div><h3>Термокружка</h3><p>Для кофе, чая и длинной смены.</p><div class="price">1 200 P</div><button class="btn btn-blue" onclick="buy('Термокружка',1200)">КУПИТЬ</button></article>
-    <article class="shop-item"><div class="product-art"><div class="badge" style="width:90px;height:90px">VIP</div></div><h3>VIP-значок профиля</h3><p>Демонстрационный цифровой предмет.</p><div class="price">650 P</div><button class="btn btn-blue" onclick="buy('VIP-значок',650)">КУПИТЬ</button></article>
-  </div>
-</section>
-
-<section class="screen" data-screen="events">
-  <div class="section-head"><div><h2>События</h2><p>Выбирай активность и участвуй.</p></div><button class="btn" data-route="home">НА ГЛАВНУЮ</button></div>
-  <div class="cards-3">
-    <article class="event-card"><div class="event-art">QUIZ</div><h3>Вечерний квиз</h3><p>Короткий командный квиз. За участие начисляется бонус.</p><button class="btn btn-pink" onclick="joinEvent('Вечерний квиз')">УЧАСТВОВАТЬ</button></article>
-    <article class="event-card"><div class="event-art">CODE</div><h3>Угадай код</h3><p>Ежедневная загадка с наградой 100 P и 250 XP.</p><button class="btn btn-blue" onclick="codeGame()">ОТКРЫТЬ</button></article>
-    <article class="event-card"><div class="event-art">FM</div><h3>TOMMART RADIO</h3><p>Перейти на уже готовую страницу радио.</p><button class="btn btn-pink" onclick="openRadio()">ОТКРЫТЬ ЭФИР</button></article>
-  </div>
-</section>
-</main>
-
-<nav class="mobile-nav">
-  <button data-route="home" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 11.5 12 4l9 7.5M5.5 10v10h13V10"/></svg></button>
-  <button data-route="news"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8"/></svg></button>
-  <button data-route="games"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M8 8h8c3 0 5 2.5 5 5.5S19 19 16.5 19c-2 0-2.5-2-4.5-2s-2.5 2-4.5 2C5 19 3 16.5 3 13.5S5 8 8 8Z"/></svg></button>
-  <button data-route="rating"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 20V10h3v10M10.5 20V4h3v16M16 20v-7h3v7"/></svg></button>
-  <button data-route="shop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 8h14l-1 12H6L5 8Z"/></svg></button>
-</nav>
-
-<div class="modal" id="modal"><div class="dialog"><div class="dialog-head"><h3 id="modalTitle">FIT ONLINE</h3><button class="close" onclick="closeModal()">×</button></div><div id="modalBody"></div></div></div>
-<div class="toast" id="toast"></div>
-<script src="app.js"></script>
-</div>
 </body>
 </html>
